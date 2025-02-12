@@ -1,0 +1,190 @@
+/* Palette de couleurs globales */
+:root {
+    --couleur-primaire: #005a63; /* Bleu forêt */
+    --couleur-secondaire: #008080; /* Teal */
+    --couleur-tertiaire: #f2f2f2; /* Gris clair */
+    --couleur-texte: #333333; /* Gris foncé pour le texte */
+    --couleur-background: #ffffff; /* Blanc pour le fond */
+    --couleur-hover: #004d52; /* Couleur au survol pour les liens */
+}
+
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--couleur-background);
+    color: var(--couleur-texte);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--couleur-primaire);
+    padding: 20px;
+    text-align: center;
+}
+
+header #logo img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: var(--couleur-secondaire);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+a {
+    color: var(--couleur-background);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: var(--couleur-hover);
+}
+
+/* Style du menu principal */
+#menu-principal {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menu-principal li {
+    margin-right: 20px;
+}
+
+/* Style du menu secondaire */
+#menu-secondaire {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu-secondaire li {
+    position: relative;
+}
+
+/* Sous-menu pour le menu secondaire (don) */
+#menu-secondaire li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--couleur-background);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#menu-secondaire li:hover ul {
+    display: block;
+}
+
+#menu-secondaire li ul li {
+    margin: 10px 0;
+}
+
+/* Styles personnalisés */
+#logo {
+    display: block;
+    margin: 0 auto;
+}
+
+#menu-principal a,
+#menu-secondaire a {
+    font-weight: bold;
+}
+
+/* Style de l'élément actif */
+#menu-principal a.active,
+#menu-secondaire a.active {
+    color: var(--couleur-primaire);
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    background-color: var(--couleur-primaire);
+    color: var(--couleur-background);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: var(--couleur-tertiaire);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: var(--couleur-tertiaire);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--couleur-hover);
+}
+
+/* Style des icônes de réseaux sociaux */
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media li a {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.social-media li a:hover {
+    color: var(--couleur-hover);
+}
+
+/* Copyright */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: var(--couleur-tertiaire);
+    border-top: 1px solid var(--couleur-secondaire);
+    padding-top: 15px;
+}
