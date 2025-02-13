@@ -623,7 +623,52 @@ main {
         height: 300px; 
     }
 }
+/* === Section Politique de Confidentialité === */
+#politique-confidentialite {
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-texte);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+}
 
+#politique-confidentialite .intro {
+    text-align: center;
+}
+
+#politique-confidentialite h1 {
+    color: var(--couleur-primaire);
+}
+
+#politique-confidentialite h2 {
+    color: var(--couleur-secondaire);
+    margin-top: 30px;
+    border-bottom: 2px solid var(--couleur-primaire);
+    padding-bottom: 5px;
+}
+
+#politique-confidentialite p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+#politique-confidentialite strong {
+    font-weight: 700;
+    color: var(--couleur-primaire);
+}
+
+/* === Liens === */
+#politique-confidentialite a {
+    color: var(--couleur-orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#politique-confidentialite a:hover {
+    color: var(--couleur-hover);
+}
 /* === Footer === */
 footer {
     background-color: var(--couleur-primaire);
