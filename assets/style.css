@@ -851,6 +851,107 @@ main {
 #contact a:hover {
     text-decoration: underline;
 }
+/* === Styles spécifiques à la page Activités & Événements === */
+
+#activites {
+    background-color: var(--couleur-tertiaire);
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+#activites h2 {
+    color: var(--couleur-primaire);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--couleur-orange);
+    padding-bottom: 10px;
+}
+
+#activites h3 {
+    color: var(--couleur-secondaire);
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+/* Liste des événements */
+#evenements-a-venir ul {
+    list-style: none;
+    padding: 0;
+}
+
+#evenements-a-venir li {
+    background: var(--couleur-background);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#evenements-a-venir li:hover {
+    transform: scale(1.02);
+}
+
+/* Activités régulières */
+.activite {
+    background: var(--couleur-background);
+    padding: 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire d'inscription */
+#inscription-evenement {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#inscription-evenement form {
+    background: var(--couleur-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+#inscription-evenement label {
+    display: block;
+    font-weight: bold;
+    color: var(--couleur-texte);
+    margin-top: 10px;
+}
+
+#inscription-evenement input,
+#inscription-evenement select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--couleur-texte);
+    border-radius: 5px;
+}
+
+#inscription-evenement button {
+    background: var(--couleur-orange);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#inscription-evenement button:hover {
+    background: var(--couleur-hover);
+}
 
 
 
