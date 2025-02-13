@@ -1,122 +1,364 @@
-/* Palette de couleurs globales */
+/* === Palette de couleurs globales === */
 :root {
     --couleur-primaire: #005a63; /* Bleu forêt */
     --couleur-secondaire: #008080; /* Teal */
     --couleur-tertiaire: #f2f2f2; /* Gris clair */
     --couleur-texte: #333333; /* Gris foncé pour le texte */
-    --couleur-background: #ffffff; /* Blanc pour le fond */
-    --couleur-hover: #004d52; /* Couleur au survol pour les liens */
+    --couleur-background: #ffffff; /* Blanc */
+    --couleur-hover: #004d52; /* Couleur au survol */
 }
 
-/* Style global */
+/* === Style global === */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: var(--couleur-background);
+    background-image: url('https://i.pinimg.com/736x/f2/3f/a3/f23fa31c88ceec0fd55ebde796b51a95.jpg'); /* Image de fond */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--couleur-texte);
     margin: 0;
     padding: 0;
 }
 
+/* === Header === */
 header {
     background-color: var(--couleur-primaire);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
-header #logo img {
+#logo img {
     width: 150px;
     height: auto;
 }
 
+/* === Navigation === */
 nav {
+    background-color: var(--couleur-secondaire);
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    background-color: var(--couleur-secondaire);
+    align-items: center;
 }
 
-ul {
+/* Menus */
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
-li {
+nav li {
     margin: 0 15px;
-    display: inline-block;
-}
-
-a {
-    color: var(--couleur-background);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-
-a:hover {
-    background-color: var(--couleur-hover);
-}
-
-/* Style du menu principal */
-#menu-principal {
-    display: flex;
-    justify-content: flex-start;
-}
-
-#menu-principal li {
-    margin-right: 20px;
-}
-
-/* Style du menu secondaire */
-#menu-secondaire {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#menu-secondaire li {
     position: relative;
 }
 
-/* Sous-menu pour le menu secondaire (don) */
-#menu-secondaire li ul {
+nav a {
+    color: var(--couleur-background);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--couleur-hover);
+}
+
+/* === Sous-menu (Dropdown) === */
+#menu-secondaire ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--couleur-background);
-    padding: 10px 20px;
+    background: var(--couleur-background);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    padding: 10px 0;
+    min-width: 200px;
 }
 
-#menu-secondaire li:hover ul {
+#menu-secondaire li:hover > ul {
     display: block;
 }
 
-#menu-secondaire li ul li {
-    margin: 10px 0;
-}
-
-/* Styles personnalisés */
-#logo {
+#menu-secondaire ul li {
     display: block;
-    margin: 0 auto;
+    padding: 10px;
 }
 
-#menu-principal a,
-#menu-secondaire a {
+#menu-secondaire ul li a {
+    color: var(--couleur-texte);
+    display: block;
+    padding: 5px 15px;
+}
+
+#menu-secondaire ul li a:hover {
+    background-color: var(--couleur-tertiaire);
+}
+
+/* === Menu burger (Mobile) === */
+.menu-burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--couleur-background);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+}
+
+/* === Contenu principal === */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+/* === Boutons === */
+.btn {
+    background: var(--couleur-primaire);
+    color: var(--couleur-background);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
 }
 
-/* Style de l'élément actif */
-#menu-principal a.active,
-#menu-secondaire a.active {
-    color: var(--couleur-primaire);
-    text-decoration: underline;
+.btn:hover {
+    background: var(--couleur-hover);
 }
-/* Footer */
+
+/* === Contact.html === */
+
+/* === Titres de la page (h1) === */
+#contact-introduction {
+    background-color: rgba(0, 0, 0, 0.445); /* Fond semi-transparent pour améliorer la lisibilité */
+    color: #eff1f5f5; /* Texte en blanc pour contraster avec le fond sombre */
+    text-align: center;
+    display: inline-block; /* Cela permet à la section de s'ajuster à la taille de son contenu */
+    padding: 16px; /* Un peu plus de padding pour un meilleur espacement */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692); /* Ombre légère pour ajouter de la profondeur */
+    margin: 20px 0; /* Espacement autour de la section */
+}
+
+#contact-introduction h1 {
+    font-size: 1.5em; /* Taille du titre augmentée pour plus de visibilité */
+    margin-bottom: 10px; /* Espace entre le titre et le texte */
+    font-weight: 700;
+}
+
+#contact-introduction p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* === Section Nos coordonnées === */
+#contact-info {
+    background-color: #c71c1c; /* Fond clair */
+    padding: 40px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    max-width: 800px; /* Largeur maximale */
+    margin: 40px auto; /* Centrer la section */
+}
+
+#contact-info  {
+    background: #ebe5e5e0;
+    font-size: 2.2em;
+    color: #2a7ae4; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(83, 82, 82, 0.6); 
+}
+
+#contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-info li {
+    font-size: 1.1em;
+    color: #555; /* Texte en gris clair */
+    margin-bottom: 15px;
+}
+
+#contact-info li a {
+    color: #0056b3; /* Bleu pour les liens */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#contact-info li a:hover {
+    color: #004494; /* Lien plus foncé au survol */
+}
+
+#contact-info li strong {
+    font-weight: 600;
+    color: #333; /* Texte important */
+}
+
+/* Media Query - Réduire la taille sur petits écrans */
+@media (max-width: 768px) {
+    #contact-info {
+        padding: 20px;
+    }
+
+    #contact-info h2 {
+        font-size: 1.8em;
+    }
+
+    #contact-info li {
+        font-size: 1em;
+    }
+}
+
+/* === Formulaire de contact === */
+#formulaire-contact {
+    background-color: #f1eeeec2; /* Fond blanc */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+#formulaire-contact h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#formulaire-contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+#formulaire-contact label {
+    font-size: 1.1em;
+    color: #444;
+    font-weight: 500;
+}
+
+#formulaire-contact input, 
+#formulaire-contact textarea {
+    padding: 15px;
+    font-size: 1em;
+    border: 1px  #dddddd;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+#formulaire-contact input:focus, 
+#formulaire-contact textarea:focus {
+    border-color: #0056b3; /* Bordure bleue sur focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+#formulaire-contact textarea {
+    min-height: 150px; /* Hauteur minimale */
+    resize: vertical; /* Permet le redimensionnement */
+}
+
+#formulaire-contact button {
+    padding: 14px 25px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: center;
+}
+
+#formulaire-contact button:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+#formulaire-contact button:active {
+    transform: translateY(0);
+}
+
+/* Media Query - Adaptation mobile pour formulaire */
+@media (max-width: 768px) {
+    #formulaire-contact {
+        padding: 20px;
+    }
+
+    #formulaire-contact h2 {
+        font-size: 1.8em;
+    }
+
+    #formulaire-contact button {
+        padding: 12px 22px;
+    }
+}
+
+/* === Carte Google Maps === */
+#carte {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#carte h2 {
+    font-size: 1.8em;
+    color: var(--couleur-primaire);
+    margin-bottom: 20px;
+}
+
+#carte iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    #carte iframe {
+        height: 300px; /* Ajuster la hauteur sur petits écrans */
+    }
+}
+
+/* === Footer === */
 footer {
     background-color: var(--couleur-primaire);
     color: var(--couleur-background);
@@ -126,9 +368,8 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -148,7 +389,6 @@ footer {
 .footer-section ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .footer-section ul li {
@@ -165,22 +405,7 @@ footer {
     color: var(--couleur-hover);
 }
 
-/* Style des icônes de réseaux sociaux */
-.social-media {
-    display: flex;
-    gap: 10px;
-}
-
-.social-media li a {
-    font-size: 1.2em;
-    padding: 5px;
-}
-
-.social-media li a:hover {
-    color: var(--couleur-hover);
-}
-
-/* Copyright */
+/* === Copyright === */
 .footer-bottom {
     margin-top: 20px;
     font-size: 0.9em;

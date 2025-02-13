@@ -3,139 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Zoo de Val-Jalbert met en vedette les animaux québécois les plus sournois et ce, dans un décor forestier enchanteur.</title>
+    <meta name="description" content="Découvrez le Zoo Forestier de Val-Jalbert, un espace dédié à la faune québécoise en pleine nature. Visitez nos animaux, participez aux activités et engagez-vous pour la préservation de l’environnement.">
+    <meta name="keywords" content="zoo, faune québécoise, nature, Val-Jalbert, animaux, protection">
+    <meta name="author" content="Zoo Forestier de Val-Jalbert">
+    <title>Le Zoo Forestier de Val-Jalbert</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <!-- Logo -->
+
+    <!-- Logo et navigation principale -->
     <header>
-        <a href="/" id="logo">
-            <img src="./assets/img/logo.png" alt="Logo Zoo Forestier de Val-Jalbert">
+        <a href="index.html" id="logo">
+            <img src="./assets/img/logo.png" alt="Logo du Zoo Forestier de Val-Jalbert">
         </a>
+        <nav aria-label="Navigation principale">
+            <ul id="menu-principal">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="informations.html">Informations</a></li>
+                <li><a href="activites.html">Activités et événements</a></li>
+                <li><a href="zoo.html">Le monde du Zoo</a></li>
+                <li><a href="faune.html">Préserver la faune</a></li>
+                <li><a href="parrainage.html">Parrainez un animal</a></li>
+                <li><a href="education.html">Programme éducatif</a></li>
+                <li><a href="liberation.html">Nos initiatives</a></li>
+                <li><a href="billets.html">Achetez vos billets</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <!-- Menu principal -->
-        <ul id="menu-principal">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Informations</a></li>
-            <li><a href="#">Activités et événements</a></li>
-            <li><a href="#">Le monde du Zoo forestier</a></li>
-            <li><a href="#">Préserver la faune sournoise</a></li>
-            <li><a href="#">Parrainez un animal</a></li>
-            <li><a href="#">Notre programme éducatif</a></li>
-            <li><a href="#">Nos initiatives de libération</a></li>
-            <li><a href="#">Achetez vos billets</a></li>
-        </ul>
-
-        <!-- Menu secondaire -->
-        <ul id="menu-secondaire">
-            <li><a href="#">Services aux écoles</a></li>
-            <li><a href="#">Faire un don</a>
-                <ul>
-                    <li><a href="#">Don unique</a></li>
-                    <li><a href="#">Don mensuel</a></li>
-                    <li><a href="#">Autres méthodes</a></li>
-                </ul>
-            </li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Partenaires</a></li>
-            <li><a href="#">Carrières</a></li>
-        </ul>
-    </nav>
-
-    <!-- Contenu de la page Accueil -->
+    <!-- Contenu principal -->
     <main>
-        <section class="promo-membre">
+
+        <!-- Promotion membres -->
+        <section id="promo-membre">
             <h1>Devenez membre et économisez !</h1>
-            <p>Obtenez un accès privilégié et illimité pour 20 $ par année.</p>
-            <a href="#">Devenez membre !</a>
+            <p>Accès illimité pour seulement <strong>20 $ par an</strong>.</p>
+            <a href="adhesion.html" class="btn">Devenez membre !</a>
         </section>
 
-        <section class="decouverte-zoo">
-            <h2>Apprenez-en plus sur le zoo et Val-Jalbert !</h2>
+        <!-- Découverte du zoo -->
+        <section id="decouverte-zoo">
+            <h2>Découvrez le Zoo et Val-Jalbert</h2>
             <article>
-                <h3>Un village plein d’histoires !</h3>
-                <img src="./assets/img/village-histoires.jpg" alt="Village historique de Val-Jalbert">
-                <p>Découvrez l’histoire fascinante de ce village unique en son genre, niché au cœur de la forêt québécoise.</p>
+                <h3>Un village plein d’histoires</h3>
+                <img src="./assets/img/village-histoires.jpg" alt="Le village historique de Val-Jalbert">
+                <p>Plongez dans l’histoire fascinante de ce lieu unique, niché au cœur de la forêt québécoise.</p>
             </article>
             <article>
-                <h3>Le cougar, typiquement québécois !</h3>
-                <img src="./assets/img/cougar.jpg" alt="Cougar québécois">
-                <p>Apprenez tout sur cet animal majestueux et incontournable de la faune du Québec.</p>
+                <h3>Le mystérieux Cougar québécois</h3>
+                <img src="./assets/img/cougar.jpg" alt="Cougar, un prédateur québécois">
+                <p>Découvrez cet animal discret et mystérieux qui peuple nos forêts.</p>
             </article>
-            <div class="promotion">
-                <h3>Devenez membre et recevez un écusson de votre choix !</h3>
-                <img src="./assets/img/ecusson.jpg" alt="Écusson du Zoo Forestier de Val-Jalbert">
-            </div>
         </section>
 
-        <section class="position-géographique">
-            <h2>À seulement 6 heures de Montréal et 30 minutes de Chicoutimi !</h2>
-            <img src="./assets/img/localisation.jpg" alt="Carte du Zoo de Val-Jalbert">
+        <!-- Localisation -->
+        <section id="position-geographique">
+            <h2>Où nous trouver ?</h2>
+            <p>Situé à seulement <strong>6 heures de Montréal</strong> et <strong>30 minutes de Chicoutimi</strong>.</p>
+            <img src="./assets/img/localisation.jpg" alt="Carte de localisation du Zoo de Val-Jalbert">
         </section>
 
-        <section class="zoo-en-foret">
-            <h2>Le seul Zoo en forêt du Québec</h2>
-            <p>Venez voir nos lynx et carcajous en liberté !</p>
-            <img src="./assets/img/lynx.jpg" alt="Lynx  en liberté">
+        <!-- Témoignages -->
+        <section id="temoignages">
+            <h2>Ce que nos visiteurs en pensent</h2>
+            <blockquote>
+                <p>"Une expérience inoubliable en pleine nature ! Les animaux sont en liberté et l’ambiance est magique."</p>
+                <cite>- Marie D.</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Parfait pour une sortie en famille, les enfants adorent !"</p>
+                <cite>- Jean L.</cite>
+            </blockquote>
         </section>
 
-        <section class="protection-faune">
-            <h2>Le Zoo de Val-Jalbert met en vedette les animaux québécois les plus sournois et ce, dans un décor forestier enchanteur.</h2>
-            <p>Venez vous promener librement au milieu des lynx, carcajous et ours bruns.</p>
-            <a href="#">Voir nos activités familiales</a>
-        </section>
-
-        <section class="contribution">
-            <h2>Aidez-nous à préserver la faune québécoise et sournoise !</h2>
-            <p>Contribuez à l’essor de l’ours noir, participez à notre programme de survie solitaire et découvrez nos initiatives de protection du caribou.</p>
-            <img src="./assets/img/protection-faune.jpg" alt="Initiatives de protection de la faune">
-        </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Le Zoo Forestier de Val-Jalbert</h3>
+                <p>Un refuge en pleine nature pour la faune québécoise.</p>
+            </div>
+
+        
+
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <ul class="social-media">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="carriere.html">Carrières</a></li>
+                    <li><a href="dons.html">Faire un don</a></li>
+                    <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Le Zoo Forestier de Val-Jalbert | Tous droits réservés</p>
+        </div>
+    </footer>
+
 </body>
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Le Zoo Forestier de Val-Jalbert</h3>
-            <p>Le seul zoo en forêt du Québec, dédié à la préservation de la faune québécoise et à l'éducation environnementale.</p>
-        </div>
-
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <ul>
-                <li><a href="mailto:contact@monzoo.com">contact@monzoo.com</a></li>
-                <li><a href="tel:+1-555-455-1234">+1 555-455-1234</a></li>
-                <li><a href="#">Adresse: 123 Rue du Zoo, Val-Jalbert, QC</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h3>Suivez-nous</h3>
-            <ul class="social-media">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h3>Liens utiles</h3>
-            <ul>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Carrières</a></li>
-                <li><a href="#">Faire un don</a></li>
-                <li><a href="#">Conditions d'utilisation</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2025 Le Zoo Forestier de Val-Jalbert | Tous droits réservés</p>
-    </div>
-</footer>
 </html>
