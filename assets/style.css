@@ -1,12 +1,14 @@
 /* === Palette de couleurs globales === */
 :root {
-    --couleur-primaire: #005a63; /* Bleu forêt */
-    --couleur-secondaire: #008080; /* Teal */
-    --couleur-tertiaire: #f2f2f2; /* Gris clair */
-    --couleur-texte: #333333; /* Gris foncé pour le texte */
-    --couleur-background: #ffffff; /* Blanc */
-    --couleur-hover: #004d52; /* Couleur au survol */
+    --couleur-primaire: #005a63; /* Bleu forêt - Couleur principale pour l'identité */
+    --couleur-secondaire: #008080; /* Teal - Couleur secondaire, complémentaire au bleu */
+    --couleur-tertiaire: #f9f9f9; /* Gris très clair - Pour un fond plus doux et lumineux */
+    --couleur-texte: #333333; /* Gris foncé - Pour un contraste optimal avec les fonds clairs */
+    --couleur-background: #ffffff; /* Blanc - Fond général pour une clarté maximale */
+    --couleur-hover: #b67437; /* Bleu foncé au survol - Pour un effet de survol plus visible et élégant */
+    --couleur-orange: #ff7b00; /* Orange - Pour les éléments d'accentuation */
 }
+
 
 /* === Style global === */
 body {
@@ -138,6 +140,53 @@ main {
     text-align: center;
 }
 
+/* === Index.HTML === */
+
+/* === Section Promotion Membres === */
+#promo-membre {
+    background-color: var(--couleur-orange); 
+    color: var(--couleur-tertiaire);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    margin: 30px auto; 
+    max-width: 900px; 
+    width: 100%; 
+    min-height: auto;
+}
+
+#promo-membre h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+#promo-membre p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#promo-membre .btn {
+    background: var(--couleur-tertiaire);
+    color: var(--couleur-orange);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#promo-membre .btn:hover {
+    background: var(--couleur-orange);
+    color: var(--couleur-tertiaire);
+    transform: translateY(-5px); 
+}
+
 /* === Boutons === */
 .btn {
     background: var(--couleur-primaire);
@@ -153,24 +202,236 @@ main {
 .btn:hover {
     background: var(--couleur-hover);
 }
+/* === Section Découverte du Zoo === */
+#decouverte-zoo {
+    background-color: var(--couleur-secondaire); 
+    color: var(--couleur-texte); 
+    padding: 60px 20px; 
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 1200px; 
+    margin: 40px auto; 
+}
+#decouverte-zoo h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--couleur-texte);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#decouverte-zoo article {
+    background-color: var(--couleur-tertiaire);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    margin: 60px auto; 
+}
+
+#decouverte-zoo article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#decouverte-zoo article h3 {
+    font-size: 2em;
+    color: var(--couleur-orange);
+    margin-bottom: 15px;
+}
+
+#decouverte-zoo article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#decouverte-zoo article p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--couleur-texte);
+    margin-top: 10px;
+}
+
+/* === Layout mobile === */
+@media (max-width: 768px) {
+    #decouverte-zoo {
+        padding: 40px 20px;
+    }
+
+    #decouverte-zoo h2 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    #decouverte-zoo article {
+        margin-bottom: 40px; 
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #decouverte-zoo article img {
+        height: 200px;
+    }
+}
+/* === Section Localisation === */
+#position-geographique {
+    background-color: var(--couleur-primaire);  
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+    margin: 40px auto; 
+    width: 90%; 
+    max-width: 1200px; 
+}
+
+#position-geographique h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#position-geographique p {
+    font-size: 1.2em;
+    color: var(--couleur-texte);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#position-geographique p strong {
+    color: var(--couleur-orange);  
+}
+
+#position-geographique img {
+    width: 50%;
+    max-width: 800px;  
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;  
+}
+
+#position-geographique img:hover {
+    transform: scale(1.05);  
+}
+
+/* === Layout mobile === */
+@media (max-width: 768px) {
+    #position-geographique {
+        padding: 40px 15px;
+    }
+
+    #position-geographique h2 {
+        font-size: 2.2em;
+    }
+
+    #position-geographique p {
+        font-size: 1.1em;
+    }
+
+    #position-geographique img {
+        max-width: 100%;  
+    }
+}
+/* === Section Témoignages === */
+#temoignages {
+    background-color:var(--couleur-primaire);  
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+    margin: 40px auto; 
+    width: 90%; 
+    max-width: 1200px;
+}
+
+#temoignages h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--couleur-texte);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#temoignages blockquote {
+    font-size: 1.4em;
+    font-style: italic;
+    color: var(--couleur-texte);
+    margin-bottom: 30px;
+    line-height: 1.8;
+    background-color: var(--couleur-background);
+    padding: 20px;
+    border-left: 5px solid var(--couleur-orange); 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+#temoignages blockquote:hover {
+    transform: translateY(-5px);  
+}
+
+#temoignages blockquote cite {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    color: var(--couleur-orange); 
+}
+
+/* === Layout mobile === */
+@media (max-width: 768px) {
+    #temoignages {
+        padding: 40px 15px;
+    }
+
+    #temoignages h2 {
+        font-size: 2.2em;
+    }
+
+    #temoignages blockquote {
+        font-size: 1.2em;
+    }
+}
+
+
 
 /* === Contact.html === */
 
 /* === Titres de la page (h1) === */
 #contact-introduction {
-    background-color: rgba(0, 0, 0, 0.445); /* Fond semi-transparent pour améliorer la lisibilité */
-    color: #eff1f5f5; /* Texte en blanc pour contraster avec le fond sombre */
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-texte); 
     text-align: center;
-    display: inline-block; /* Cela permet à la section de s'ajuster à la taille de son contenu */
-    padding: 16px; /* Un peu plus de padding pour un meilleur espacement */
-    border-radius: 15px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692); /* Ombre légère pour ajouter de la profondeur */
-    margin: 20px 0; /* Espacement autour de la section */
+    display: inline-block; 
+    padding: 16px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692); 
+    margin: 20px 0; 
 }
 
 #contact-introduction h1 {
-    font-size: 1.5em; /* Taille du titre augmentée pour plus de visibilité */
-    margin-bottom: 10px; /* Espace entre le titre et le texte */
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
     font-weight: 700;
 }
 
@@ -183,22 +444,22 @@ main {
 
 /* === Section Nos coordonnées === */
 #contact-info {
-    background-color: #c71c1c; /* Fond clair */
+    background-color:var(--couleur-background);
     padding: 40px;
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    max-width: 800px; /* Largeur maximale */
-    margin: 40px auto; /* Centrer la section */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 40px auto; 
 }
 
 #contact-info  {
-    background: #ebe5e5e0;
+    background: var(--couleur-secondaire);
     font-size: 2.2em;
-    color: #2a7ae4; 
+    color: var(--couleur-texte); 
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(83, 82, 82, 0.6); 
+    
 }
 
 #contact-info ul {
@@ -208,24 +469,24 @@ main {
 
 #contact-info li {
     font-size: 1.1em;
-    color: #555; /* Texte en gris clair */
+    color: var(--couleur-texte); 
     margin-bottom: 15px;
 }
 
 #contact-info li a {
-    color: #0056b3; /* Bleu pour les liens */
+    color: #0056b3; 
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 #contact-info li a:hover {
-    color: #004494; /* Lien plus foncé au survol */
+    color: #004494; 
 }
 
 #contact-info li strong {
     font-weight: 600;
-    color: #333; /* Texte important */
+    color: var(--couleur-texte); 
 }
 
 /* Media Query - Réduire la taille sur petits écrans */
@@ -245,7 +506,7 @@ main {
 
 /* === Formulaire de contact === */
 #formulaire-contact {
-    background-color: #f1eeeec2; /* Fond blanc */
+    background-color: var(--couleur-secondaire); 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -255,7 +516,7 @@ main {
 
 #formulaire-contact h2 {
     font-size: 2.2em;
-    color: #333;
+    color: var(--couleur-texte);
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
@@ -264,20 +525,21 @@ main {
 #formulaire-contact form {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px; /* Espacement entre les éléments */
+    gap: 20px; 
 }
 
 #formulaire-contact label {
     font-size: 1.1em;
-    color: #444;
+    color: var(--couleur-texte);
     font-weight: 500;
 }
 
 #formulaire-contact input, 
 #formulaire-contact textarea {
+    background-color: var(--couleur-tertiaire);
     padding: 15px;
     font-size: 1em;
-    border: 1px  #dddddd;
+    border: 1px  var(--couleur-texte);
     border-radius: 6px;
     width: 100%;
     box-sizing: border-box;
@@ -286,20 +548,20 @@ main {
 
 #formulaire-contact input:focus, 
 #formulaire-contact textarea:focus {
-    border-color: #0056b3; /* Bordure bleue sur focus */
+    border-color: #0056b3;  
     outline: none;
     box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
 }
 
 #formulaire-contact textarea {
-    min-height: 150px; /* Hauteur minimale */
-    resize: vertical; /* Permet le redimensionnement */
+    min-height: 150px; 
+    resize: vertical; 
 }
 
 #formulaire-contact button {
     padding: 14px 25px;
-    background-color: #0056b3;
-    color: #fff;
+    background-color: var(--couleur-orange);
+    color: var(--couleur-texte);
     font-size: 1.1em;
     border: none;
     border-radius: 6px;
@@ -309,7 +571,7 @@ main {
 }
 
 #formulaire-contact button:hover {
-    background-color: #004494;
+    background-color: var(--couleur-hover);
     transform: translateY(-2px);
 }
 
@@ -354,7 +616,7 @@ main {
 
 @media (max-width: 768px) {
     #carte iframe {
-        height: 300px; /* Ajuster la hauteur sur petits écrans */
+        height: 300px; 
     }
 }
 
