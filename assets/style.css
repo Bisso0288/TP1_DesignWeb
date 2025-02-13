@@ -8,8 +8,6 @@
     --couleur-hover: #b67437; 
     --couleur-orange: #ff7b00; 
 }
-
-
 /* === Style global === */
 body {
     font-family: 'Arial', sans-serif;
@@ -21,19 +19,16 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* === Header === */
 header {
     background-color: var(--couleur-primaire);
     padding: 15px;
     text-align: center;
 }
-
 #logo img {
     width: 150px;
     height: auto;
 }
-
 /* === Navigation === */
 nav {
     background-color: var(--couleur-secondaire);
@@ -42,7 +37,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 /* Menus */
 nav ul {
     list-style: none;
@@ -50,12 +44,10 @@ nav ul {
     margin: 0;
     display: flex;
 }
-
 nav li {
     margin: 0 15px;
     position: relative;
 }
-
 nav a {
     color: var(--couleur-background);
     text-decoration: none;
@@ -64,11 +56,9 @@ nav a {
     border-radius: 4px;
     transition: background 0.3s;
 }
-
 nav a:hover {
     background-color: var(--couleur-primaire);
 }
-
 /* === Sous-menu (Dropdown) === */
 #menu-secondaire ul {
     display: none;
@@ -81,26 +71,21 @@ nav a:hover {
     padding: 10px 0;
     min-width: 200px;
 }
-
 #menu-secondaire li:hover > ul {
     display: block;
 }
-
 #menu-secondaire ul li {
     display: block;
     padding: 10px;
 }
-
 #menu-secondaire ul li a {
     color: var(--couleur-texte);
     display: block;
     padding: 5px 15px;
 }
-
 #menu-secondaire ul li a:hover {
     background-color: var(--couleur-tertiaire);
 }
-
 /* === Menu burger (Mobile) === */
 .menu-burger {
     display: none;
@@ -108,40 +93,12 @@ nav a:hover {
     cursor: pointer;
     color: var(--couleur-background);
 }
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-
-    .menu-burger {
-        display: block;
-    }
-}
-
 /* === Contenu principal === */
 main {
     padding: 30px;
     text-align: center;
 }
-
 /* === Index.HTML === */
-
 /* === Section Promotion Membres === */
 #promo-membre {
     background-color: var(--couleur-orange); 
@@ -155,20 +112,17 @@ main {
     width: 100%; 
     min-height: auto;
 }
-
 #promo-membre h1 {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
-
 #promo-membre p {
     font-size: 1.3em;
     margin-bottom: 20px;
     font-weight: 500;
 }
-
 #promo-membre .btn {
     background: var(--couleur-tertiaire);
     color: var(--couleur-orange);
@@ -180,13 +134,11 @@ main {
     display: inline-block;
     transition: background 0.3s, transform 0.3s;
 }
-
 #promo-membre .btn:hover {
     background: var(--couleur-orange);
     color: var(--couleur-tertiaire);
     transform: translateY(-5px); 
 }
-
 /* === Boutons === */
 .btn-promo {
     background: var(--couleur-tertiaire);
@@ -198,7 +150,6 @@ main {
     display: inline-block;
     transition: background 0.3s;
 }
-
 .btn-promo:hover {
     background: var(--couleur-secondaire);
     color: var(--couleur-texte);
@@ -222,7 +173,6 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 #decouverte-zoo article {
     background-color: var(--couleur-tertiaire);
     border-radius: 8px;
@@ -240,18 +190,15 @@ main {
     box-sizing: border-box;
     margin: 60px auto; 
 }
-
 #decouverte-zoo article:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
 #decouverte-zoo article h3 {
     font-size: 2em;
     color: var(--couleur-orange);
     margin-bottom: 15px;
 }
-
 #decouverte-zoo article img {
     width: 100%;
     height: 250px;
@@ -259,34 +206,11 @@ main {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
 #decouverte-zoo article p {
     font-size: 1.1em;
     line-height: 1.8;
     color: var(--couleur-texte);
     margin-top: 10px;
-}
-
-/* === Layout mobile === */
-@media (max-width: 768px) {
-    #decouverte-zoo {
-        padding: 40px 20px;
-    }
-
-    #decouverte-zoo h2 {
-        font-size: 2.2em;
-        margin-bottom: 30px;
-    }
-
-    #decouverte-zoo article {
-        margin-bottom: 40px; 
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    #decouverte-zoo article img {
-        height: 200px;
-    }
 }
 /* === Section Localisation === */
 #position-geographique {
@@ -299,7 +223,6 @@ main {
     width: 90%; 
     max-width: 1200px; 
 }
-
 #position-geographique h2 {
     font-size: 2.5em;
     font-weight: 700;
@@ -308,18 +231,15 @@ main {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 #position-geographique p {
     font-size: 1.2em;
     color: var(--couleur-texte);
     margin-bottom: 30px;
     line-height: 1.6;
 }
-
 #position-geographique p strong {
     color: var(--couleur-orange);  
 }
-
 #position-geographique img {
     width: 50%;
     max-width: 800px;  
@@ -328,28 +248,8 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease;  
 }
-
 #position-geographique img:hover {
     transform: scale(1.05);  
-}
-
-/* === Layout mobile === */
-@media (max-width: 768px) {
-    #position-geographique {
-        padding: 40px 15px;
-    }
-
-    #position-geographique h2 {
-        font-size: 2.2em;
-    }
-
-    #position-geographique p {
-        font-size: 1.1em;
-    }
-
-    #position-geographique img {
-        max-width: 100%;  
-    }
 }
 /* === Section Témoignages === */
 #temoignages {
@@ -362,7 +262,6 @@ main {
     width: 90%; 
     max-width: 1200px;
 }
-
 #temoignages h2 {
     font-size: 2.5em;
     font-weight: 700;
@@ -371,7 +270,6 @@ main {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 #temoignages blockquote {
     font-size: 1.4em;
     font-style: italic;
@@ -386,11 +284,9 @@ main {
     position: relative;
     transition: transform 0.3s ease; 
 }
-
 #temoignages blockquote:hover {
     transform: translateY(-5px);  
 }
-
 #temoignages blockquote cite {
     display: block;
     font-size: 1.1em;
@@ -398,26 +294,7 @@ main {
     margin-top: 15px;
     color: var(--couleur-orange); 
 }
-
-/* === Layout mobile === */
-@media (max-width: 768px) {
-    #temoignages {
-        padding: 40px 15px;
-    }
-
-    #temoignages h2 {
-        font-size: 2.2em;
-    }
-
-    #temoignages blockquote {
-        font-size: 1.2em;
-    }
-}
-
-
-
 /* === Contact.html === */
-
 /* === Titres de la page (h1) === */
 #contact-introduction {
     text-align: center;
@@ -428,7 +305,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 #contact-introduction h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
@@ -436,16 +312,12 @@ main {
     margin-bottom: 15px;
     font-weight: 700;
 }
-
 #contact-introduction p {
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     color: var(--couleur-texte);
     line-height: 1.6;
 }
-
-
-
 /* === Section Nos coordonnées === */
 #contact-info {
     background-color:var(--couleur-background);
@@ -455,7 +327,6 @@ main {
     max-width: 800px; 
     margin: 40px auto; 
 }
-
 #contact-info  {
     background: var(--couleur-secondaire);
     font-size: 2.2em;
@@ -465,49 +336,28 @@ main {
     font-weight: 600;
     
 }
-
 #contact-info ul {
     list-style: none;
     padding: 0;
 }
-
 #contact-info li {
     font-size: 1.1em;
     color: var(--couleur-texte); 
     margin-bottom: 15px;
 }
-
 #contact-info li a {
     color: #0056b3; 
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-
 #contact-info li a:hover {
     color: #004494; 
 }
-
 #contact-info li strong {
     font-weight: 600;
     color: var(--couleur-texte); 
 }
-
-/* Media Query - Réduire la taille sur petits écrans */
-@media (max-width: 768px) {
-    #contact-info {
-        padding: 20px;
-    }
-
-    #contact-info h2 {
-        font-size: 1.8em;
-    }
-
-    #contact-info li {
-        font-size: 1em;
-    }
-}
-
 /* === Formulaire de contact === */
 #formulaire-contact {
     background-color: var(--couleur-secondaire); 
@@ -517,7 +367,6 @@ main {
     max-width: 800px;
     margin: 40px auto;
 }
-
 #formulaire-contact h2 {
     font-size: 2.2em;
     color: var(--couleur-texte);
@@ -525,19 +374,16 @@ main {
     text-align: center;
     font-weight: 600;
 }
-
 #formulaire-contact form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px; 
 }
-
 #formulaire-contact label {
     font-size: 1.1em;
     color: var(--couleur-texte);
     font-weight: 500;
 }
-
 #formulaire-contact input, 
 #formulaire-contact textarea {
     background-color: var(--couleur-tertiaire);
@@ -549,19 +395,16 @@ main {
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
-
 #formulaire-contact input:focus, 
 #formulaire-contact textarea:focus {
     border-color: #0056b3;  
     outline: none;
     box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
 }
-
 #formulaire-contact textarea {
     min-height: 150px; 
     resize: vertical; 
 }
-
 #formulaire-contact button {
     padding: 14px 25px;
     background-color: var(--couleur-orange);
@@ -573,55 +416,29 @@ main {
     transition: background-color 0.3s ease, transform 0.3s ease;
     align-self: center;
 }
-
 #formulaire-contact button:hover {
     background-color: var(--couleur-hover);
     transform: translateY(-2px);
 }
-
 #formulaire-contact button:active {
     transform: translateY(0);
 }
-
-/* Media Query - Adaptation mobile pour formulaire */
-@media (max-width: 768px) {
-    #formulaire-contact {
-        padding: 20px;
-    }
-
-    #formulaire-contact h2 {
-        font-size: 1.8em;
-    }
-
-    #formulaire-contact button {
-        padding: 12px 22px;
-    }
-}
-
 /* === Carte Google Maps === */
 #carte {
     text-align: center;
     margin: 40px 0;
 }
-
 #carte h2 {
     font-size: 1.8em;
     color: var(--couleur-primaire);
     margin-bottom: 20px;
 }
-
 #carte iframe {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
     height: 400px;
-}
-
-@media (max-width: 768px) {
-    #carte iframe {
-        height: 300px; 
-    }
 }
 /* === Section Politique de Confidentialité === */
 #politique-confidentialite {
@@ -632,40 +449,33 @@ main {
     max-width: 900px;
     margin: 20px auto;
 }
-
 #politique-confidentialite .intro {
     text-align: center;
 }
-
 #politique-confidentialite h1 {
     color: var(--couleur-primaire);
 }
-
 #politique-confidentialite h2 {
     color: var(--couleur-secondaire);
     margin-top: 30px;
     border-bottom: 2px solid var(--couleur-primaire);
     padding-bottom: 5px;
 }
-
 #politique-confidentialite p {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 15px 0;
 }
-
 #politique-confidentialite strong {
     font-weight: 700;
     color: var(--couleur-primaire);
 }
-
 /* === Liens === */
 #politique-confidentialite a {
     color: var(--couleur-orange);
     text-decoration: none;
     font-weight: 600;
 }
-
 #politique-confidentialite a:hover {
     color: var(--couleur-hover);
 }
@@ -676,29 +486,24 @@ main {
     padding: 60px 20px;
     text-align: center;
 }
-
 #conditions section {
     margin-bottom: 30px;
 }
-
 #conditions h2 {
     font-size: 1.8em;
     color: var(--couleur-primaire);
     margin-bottom: 10px;
 }
-
 #conditions p {
     font-size: 1.1em;
     line-height: 1.6;
     color: var(--couleur-texte);
 }
-
 #conditions a {
     color: var(--couleur-secondaire);
     text-decoration: none;
     font-weight: bold;
 }
-
 #conditions a:hover {
     color: var(--couleur-orange);
 }
@@ -711,12 +516,10 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
 #dons h2 {
     color: var(--couleur-primaire);
     margin-bottom: 15px;
 }
-
 #introduction, #types-de-dons, #faire-un-don, #remerciements {
     background-color: var(--couleur-tertiaire);
     margin-bottom: 20px;
@@ -724,34 +527,28 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-
 #introduction p, #types-de-dons li {
     font-size: 1rem;
     color: var(--couleur-texte);
 }
-
 /* === Types de dons === */
 #types-de-dons ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 #types-de-dons li {
     margin: 10px 0;
 }
-
 /* === Formulaire de don === */
 #faire-un-don form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 #faire-un-don label {
     font-size: 0.9rem;
     color: var(--couleur-primaire);
 }
-
 #faire-un-don input {
     padding: 10px;
     border: 1px solid var(--couleur-primaire);
@@ -759,12 +556,10 @@ main {
     font-size: 1rem;
     transition: border 0.3s ease;
 }
-
 #faire-un-don input:focus {
     border-color: var(--couleur-orange);
     outline: none;
 }
-
 #faire-un-don button {
     background-color: var(--couleur-orange);
     color: white;
@@ -775,11 +570,9 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 #faire-un-don button:hover {
     background-color: var(--couleur-hover);
 }
-
 /* === Remerciements === */
 #remerciements p {
     text-align: center;
@@ -795,12 +588,10 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
 #informations h2 {
     color: var(--couleur-primaire);
     margin-bottom: 15px;
 }
-
 /* Sections */
 #introduction, #services, #faq, #contact {
     background-color: var(--couleur-tertiaire);
@@ -809,18 +600,15 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-
 /* Liste des services */
 #services ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 #services li {
     margin: 10px 0;
     font-size: 1rem;
 }
-
 /* FAQ */
 #faq details {
     margin-bottom: 10px;
@@ -831,28 +619,23 @@ main {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-
 #faq details summary {
     font-weight: bold;
     color: var(--couleur-primaire);
 }
-
 #faq details p {
     margin-top: 5px;
     color: var(--couleur-texte);
 }
-
 /* Contact */
 #contact a {
     color: var(--couleur-orange);
     text-decoration: none;
 }
-
 #contact a:hover {
     text-decoration: underline;
 }
 /* === Styles spécifiques à la page Activités & Événements === */
-
 #activites {
     background-color: var(--couleur-tertiaire);
     padding: 50px 20px;
@@ -861,7 +644,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 /* Titres */
 #activites h2 {
     color: var(--couleur-primaire);
@@ -871,19 +653,16 @@ main {
     border-bottom: 3px solid var(--couleur-orange);
     padding-bottom: 10px;
 }
-
 #activites h3 {
     color: var(--couleur-secondaire);
     font-size: 1.5em;
     margin-top: 15px;
 }
-
 /* Liste des événements */
 #evenements-a-venir ul {
     list-style: none;
     padding: 0;
 }
-
 #evenements-a-venir li {
     background: var(--couleur-background);
     padding: 20px;
@@ -892,11 +671,9 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
-
 #evenements-a-venir li:hover {
     transform: scale(1.02);
 }
-
 /* Activités régulières */
 .activite {
     background: var(--couleur-background);
@@ -905,13 +682,11 @@ main {
     margin: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 /* Formulaire d'inscription */
 #inscription-evenement {
     margin-top: 40px;
     text-align: center;
 }
-
 #inscription-evenement form {
     background: var(--couleur-background);
     padding: 20px;
@@ -920,14 +695,12 @@ main {
     max-width: 500px;
     margin: auto;
 }
-
 #inscription-evenement label {
     display: block;
     font-weight: bold;
     color: var(--couleur-texte);
     margin-top: 10px;
 }
-
 #inscription-evenement input,
 #inscription-evenement select {
     width: 100%;
@@ -936,7 +709,6 @@ main {
     border: 1px solid var(--couleur-texte);
     border-radius: 5px;
 }
-
 #inscription-evenement button {
     background: var(--couleur-orange);
     color: white;
@@ -948,7 +720,6 @@ main {
     border-radius: 5px;
     transition: background 0.3s ease;
 }
-
 #inscription-evenement button:hover {
     background: var(--couleur-hover);
 }
@@ -965,19 +736,16 @@ main {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
-
 #galerie-zoo:hover {
     transform: translateY(-5px); 
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); 
 }
-
 #titre-galerie {
     font-size: 2rem;
     font-weight: bold;
     color: var(--couleur-texte);
     margin-bottom: 20px;
 }
-
 /* Grille d'images */
 #grid-galerie {
     display: grid;
@@ -985,7 +753,6 @@ main {
     gap: 15px;
     justify-items: center;
 }
-
 .gallery-item {
     width: 100%;
     height: auto;
@@ -993,13 +760,11 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
-
 /* Effet sur les images au survol */
 .gallery-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 /* Carrousel */
 #carrousel-zoo {
     display: none;
@@ -1013,7 +778,6 @@ main {
     align-items: center;
     z-index: 1000;
   }
-  
   #image-aperçu {
     width: 100%;
     max-width: 500px;
@@ -1021,13 +785,11 @@ main {
     margin: 0 auto;
     cursor: pointer;
   }
-  
   #image-active {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
   }
-  
   button {
     background: none;
     border: none;
@@ -1038,15 +800,12 @@ main {
     transform: translateY(-50%);
     cursor: pointer;
   }
-  
   #precedent-carrousel {
     left: 10px;
   }
-  
   #suivant-carrousel {
     right: 10px;
   }
-  
   #fermer-carrousel {
     position: absolute;
     top: 10px;
@@ -1065,20 +824,16 @@ main {
     max-width: 80%;
     margin: auto;
 }
-
-
 #titre-equipe {
     font-size: 2rem;
     margin-bottom: 30px;
 }
-
 #contenu-equipe {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
-
 .employe {
     background: white;
     padding: 20px;
@@ -1088,32 +843,26 @@ main {
     width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .employe:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
-
 .photo-employe {
     width: 100%;
     border-radius: 10px;
     height: 250px;
     object-fit: cover;
 }
-
 .nom-employe {
     font-size: 1.5rem;
     margin: 15px 0 10px;
     color: var(--couleur-principale);
 }
-
 .mission-employe {
     font-size: 1rem;
     color: var(--couleur-texte-secondaire);
     padding: 0 10px;
 }
-
-
 /* === Footer === */
 footer {
     background-color: var(--couleur-primaire);
@@ -1121,7 +870,6 @@ footer {
     padding: 30px 20px;
     text-align: center;
 }
-
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -1129,38 +877,31 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .footer-section {
     flex: 1;
     min-width: 200px;
     text-align: left;
 }
-
 .footer-section h3 {
     color: var(--couleur-tertiaire);
     font-size: 1.2em;
     margin-bottom: 10px;
 }
-
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-section ul li {
     margin-bottom: 5px;
 }
-
 .footer-section ul li a {
     color: var(--couleur-tertiaire);
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .footer-section ul li a:hover {
     color: var(--couleur-hover);
 }
-
 /* === Copyright === */
 .footer-bottom {
     margin-top: 20px;
@@ -1168,4 +909,159 @@ footer {
     color: var(--couleur-tertiaire);
     border-top: 1px solid var(--couleur-secondaire);
     padding-top: 15px;
+}
+/* Media Queries */
+
+/* Pour les tablettes et les appareils de taille moyenne (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #activites {
+        flex-direction: column; /* Affiche les activités en colonne */
+    }
+
+    .card-employe {
+        max-width: 100%; /* Les cartes prennent toute la largeur disponible */
+        margin: 15px 0; /* Ajout d'espace entre les cartes */
+    }
+
+    #grid-galerie {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste la grille pour des écrans plus petits */
+    }
+
+    #activites h2 {
+        font-size: 1.8em; /* Taille de police réduite pour les écrans moyens */
+    }
+}
+/* Pour les téléphones et écrans plus petits (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Réduit l'espace autour du contenu */
+    }
+    #carte iframe {
+        height: 300px; 
+    }
+    #activites h2 {
+        font-size: 1.6em; /* Réduction de la taille de police */
+    }
+    .card-employe {
+        padding: 10px; /* Réduction de la marge intérieure des cartes */
+    }
+    #grid-galerie {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Grille plus petite avec des éléments plus ajustés */
+    }
+    #activites {
+        flex-direction: column; /* Organise les éléments en colonne */
+    }
+    .card-employe img {
+        width: 80px; 
+        height: 80px; 
+    }
+    #formulaire-contact {
+        padding: 20px;
+    }
+
+    #formulaire-contact h2 {
+        font-size: 1.8em;
+    }
+
+    #formulaire-contact button {
+        padding: 12px 22px;
+    }
+    #contact-info {
+        padding: 20px;
+    }
+
+    #contact-info h2 {
+        font-size: 1.8em;
+    }
+
+    #contact-info li {
+        font-size: 1em;
+    }
+    #temoignages {
+        padding: 40px 15px;
+    }
+
+    #temoignages h2 {
+        font-size: 2.2em;
+    }
+
+    #temoignages blockquote {
+        font-size: 1.2em;
+    }
+    #position-geographique {
+        padding: 40px 15px;
+    }
+
+    #position-geographique h2 {
+        font-size: 2.2em;
+    }
+
+    #position-geographique p {
+        font-size: 1.1em;
+    }
+
+    #position-geographique img {
+        max-width: 100%;  
+    }
+    #decouverte-zoo {
+        padding: 40px 20px;
+    }
+
+    #decouverte-zoo h2 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    #decouverte-zoo article {
+        margin-bottom: 40px; 
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #decouverte-zoo article img {
+        height: 200px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+}
+/* Pour les écrans très petits (téléphones en mode portrait - max-width: 480px) */
+@media (max-width: 480px) {
+    #activites h2 {
+        font-size: 1.4em; /* Réduction maximale de la taille de la police */
+    }
+    #activites {
+        flex-direction: column; /* Alignement en colonne */
+        align-items: center; /* Centrage des éléments */
+    }
+    .card-employe {
+        width: 90%; /* Les cartes occupent la majorité de l'espace horizontal */
+        padding: 10px; /* Réduit l'espace interne des cartes */
+    }
+    .card-employe img {
+        width: 60px; /* Réduit la taille des images */
+        height: 60px; /* Réduit la taille des images */
+    }
+    #grid-galerie {
+        grid-template-columns: 1fr; /* Grille avec une seule colonne */
+    }
 }
