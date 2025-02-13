@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <title>Le Monde du Zoo</title>
+</head>
+<body>
+     <!-- Header  -->
+    <header>
+        <a href="index.html" id="logo">
+            <img src="./assets/img/logo.png" alt="Logo du Zoo Forestier de Val-Jalbert">
+        </a>
+        <nav aria-label="Navigation principale">
+            <ul id="menu-principal">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="informations.html">Informations</a></li>
+                <li><a href="activites.html">Activités et événements</a></li>
+                <li><a href="zoo.html">Le monde du Zoo</a></li>
+                <li><a href="faune.html">Préserver la faune</a></li>
+                <li><a href="parrainage.html">Parrainez un animal</a></li>
+                <li><a href="education.html">Programme éducatif</a></li>
+                <li><a href="liberation.html">Nos initiatives</a></li>
+                <li><a href="billets.html">Achetez vos billets</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <h1 id="titre-zoo">Le Monde du Zoo</h1>
+        <p id="description-zoo">Découvrez les merveilles de la faune et l'équipe passionnée qui prend soin des animaux.</p>
+    </header>
+
+    <main>
+       
+        <section id="galerie-zoo">
+            <h2 id="titre-galerie">Galerie Photo</h2>
+            
+            <!-- Image unique qui sert de déclencheur pour ouvrir le carrousel -->
+            <img id="image-aperçu" src="assets/img/album.jpg" alt="Galerie Zoo">
+          </section>
+        
+          <!-- Carrousel (caché par défaut) -->
+          <div id="carrousel-zoo" class="hidden">
+            <span id="fermer-carrousel">X</span>
+            <img id="image-active" src="" alt="Aperçu">
+            <button id="precedent-carrousel">&#10094;</button>
+            <button id="suivant-carrousel">&#10095;</button>
+          </div>
+          
+          
+    
+        <section id="equipe-zoo">
+            <h2 id="titre-equipe">Notre Équipe</h2>
+            <div id="contenu-equipe">
+                <div class="employe">
+                    <img class="photo-employe" src="assets/img/veterinaire.jpg" alt="Jean Dupont">
+                    <h3 class="nom-employe">Jean Dupont</h3>
+                    <p class="mission-employe">Vétérinaire en chef - S'occupe du bien-être et de la santé des animaux.</p>
+                </div>
+                <div class="employe">
+                    <img class="photo-employe" src="assets/img/sophie.jpg" alt="Sophie Martin">
+                    <h3 class="nom-employe">Sophie Martin</h3>
+                    <p class="mission-employe">Responsable des soigneurs - Gère l'équipe de soigneurs et leur formation.</p>
+                </div>
+                <div class="employe">
+                    <img class="photo-employe" src="assets/img/lea.jpg" alt="Léa Rousseau">
+                    <h3 class="nom-employe">Léa Rousseau</h3>
+                    <p class="mission-employe">Guide animalier - Partage ses connaissances avec les visiteurs du zoo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Le Zoo Forestier de Val-Jalbert</h3>
+                    <p>Un refuge en pleine nature pour la faune québécoise.</p>
+                </div>
+    
+            
+    
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <ul class="social-media">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="carriere.html">Carrières</a></li>
+                        <li><a href="dons.html">Faire un don</a></li>
+                        <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 Le Zoo Forestier de Val-Jalbert | Tous droits réservés</p>
+            </div>
+        </footer>
+        <script src="assets/script.js"></script>
+</body>
+</html>
