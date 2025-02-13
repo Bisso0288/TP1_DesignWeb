@@ -18,7 +18,7 @@ Bienvenue sur mon portfolio en ligne ! Ce site web présente une collection de m
 - **CSS3** : Pour la mise en forme et le design du site.
   - Utilisation de Flexbox pour une mise en page flexible et responsive.
 - **JavaScript** : Pour l'interactivité et la gestion des événements.
-- **PHP** : Utilisé pour le traitement du formulaire de contact (optionnel selon votre implémentation).
+- **PHP** : Utilisé pour le traitement du formulaire de contact 
 - **Git** : Gestion du code source et versioning.
 
 ## Installation
