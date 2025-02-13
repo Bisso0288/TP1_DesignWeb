@@ -669,6 +669,41 @@ main {
 #politique-confidentialite a:hover {
     color: var(--couleur-hover);
 }
+/* === Section principale des conditions d'utilisation === */
+#conditions {
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-texte);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#conditions section {
+    margin-bottom: 30px;
+}
+
+#conditions h2 {
+    font-size: 1.8em;
+    color: var(--couleur-primaire);
+    margin-bottom: 10px;
+}
+
+#conditions p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--couleur-texte);
+}
+
+#conditions a {
+    color: var(--couleur-secondaire);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#conditions a:hover {
+    color: var(--couleur-orange);
+}
+
+
 /* === Footer === */
 footer {
     background-color: var(--couleur-primaire);
