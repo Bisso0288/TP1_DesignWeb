@@ -786,6 +786,71 @@ main {
     font-size: 1.1rem;
     color: var(--couleur-texte);
 }
+/* === Page Informations === */
+#informations {
+    padding: 40px 20px;
+    background-color: var(--couleur-background);
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#informations h2 {
+    color: var(--couleur-primaire);
+    margin-bottom: 15px;
+}
+
+/* Sections */
+#introduction, #services, #faq, #contact {
+    background-color: var(--couleur-tertiaire);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Liste des services */
+#services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#services li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* FAQ */
+#faq details {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: var(--couleur-background);
+    border-radius: 5px;
+    border: 1px solid var(--couleur-primaire);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#faq details summary {
+    font-weight: bold;
+    color: var(--couleur-primaire);
+}
+
+#faq details p {
+    margin-top: 5px;
+    color: var(--couleur-texte);
+}
+
+/* Contact */
+#contact a {
+    color: var(--couleur-orange);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
 
 
 
