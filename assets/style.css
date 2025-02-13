@@ -1,12 +1,12 @@
 /* === Palette de couleurs globales === */
 :root {
-    --couleur-primaire: #005a63; /* Bleu forêt - Couleur principale pour l'identité */
-    --couleur-secondaire: #008080; /* Teal - Couleur secondaire, complémentaire au bleu */
-    --couleur-tertiaire: #f9f9f9; /* Gris très clair - Pour un fond plus doux et lumineux */
-    --couleur-texte: #333333; /* Gris foncé - Pour un contraste optimal avec les fonds clairs */
-    --couleur-background: #ffffff; /* Blanc - Fond général pour une clarté maximale */
-    --couleur-hover: #b67437; /* Bleu foncé au survol - Pour un effet de survol plus visible et élégant */
-    --couleur-orange: #ff7b00; /* Orange - Pour les éléments d'accentuation */
+    --couleur-primaire: #005a63; 
+    --couleur-secondaire: #008080; 
+    --couleur-tertiaire: #f9f9f9; 
+    --couleur-texte: #333333; 
+    --couleur-background: #ffffff; 
+    --couleur-hover: #b67437; 
+    --couleur-orange: #ff7b00; 
 }
 
 
@@ -66,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--couleur-hover);
+    background-color: var(--couleur-primaire);
 }
 
 /* === Sous-menu (Dropdown) === */
@@ -188,9 +188,9 @@ main {
 }
 
 /* === Boutons === */
-.btn {
-    background: var(--couleur-primaire);
-    color: var(--couleur-background);
+.btn-promo {
+    background: var(--couleur-tertiaire);
+    color: var(--couleur-orange);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -199,8 +199,9 @@ main {
     transition: background 0.3s;
 }
 
-.btn:hover {
-    background: var(--couleur-hover);
+.btn-promo:hover {
+    background: var(--couleur-secondaire);
+    color: var(--couleur-texte);
 }
 /* === Section Découverte du Zoo === */
 #decouverte-zoo {
@@ -419,27 +420,30 @@ main {
 
 /* === Titres de la page (h1) === */
 #contact-introduction {
-    background-color: var(--couleur-secondaire);
-    color: var(--couleur-texte); 
     text-align: center;
-    display: inline-block; 
-    padding: 16px; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692); 
-    margin: 20px 0; 
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color:var(--couleur-secondaire);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contact-introduction h1 {
-    font-size: 1.5em; 
-    margin-bottom: 10px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: var(--couleur-texte);
+    margin-bottom: 15px;
     font-weight: 700;
 }
 
 #contact-introduction p {
-    font-size: 1.2em;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    color: var(--couleur-texte);
     line-height: 1.6;
-    margin-bottom: 15px;
 }
+
 
 
 /* === Section Nos coordonnées === */
