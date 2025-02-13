@@ -702,6 +702,91 @@ main {
 #conditions a:hover {
     color: var(--couleur-orange);
 }
+/* === Section principale des dons === */
+#dons {
+    padding: 40px 20px;
+    background-color: var(--couleur-background);
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#dons h2 {
+    color: var(--couleur-primaire);
+    margin-bottom: 15px;
+}
+
+#introduction, #types-de-dons, #faire-un-don, #remerciements {
+    background-color: var(--couleur-tertiaire);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#introduction p, #types-de-dons li {
+    font-size: 1rem;
+    color: var(--couleur-texte);
+}
+
+/* === Types de dons === */
+#types-de-dons ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#types-de-dons li {
+    margin: 10px 0;
+}
+
+/* === Formulaire de don === */
+#faire-un-don form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#faire-un-don label {
+    font-size: 0.9rem;
+    color: var(--couleur-primaire);
+}
+
+#faire-un-don input {
+    padding: 10px;
+    border: 1px solid var(--couleur-primaire);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+#faire-un-don input:focus {
+    border-color: var(--couleur-orange);
+    outline: none;
+}
+
+#faire-un-don button {
+    background-color: var(--couleur-orange);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#faire-un-don button:hover {
+    background-color: var(--couleur-hover);
+}
+
+/* === Remerciements === */
+#remerciements p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--couleur-texte);
+}
+
 
 
 /* === Footer === */
